@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kanboard-secure-http-headers
+data:
+  ENABLE_HSTS: "true"
+  ENABLE_XFRAME: "true"
