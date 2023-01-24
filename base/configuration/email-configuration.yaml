@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kanboard-email-configuration
+data:
+  MAIL_CONFIGURATION: "true"
+  MAIL_FROM: "notifications@kanboard.local"
+  MAIL_TRANSPORT: "mail"
+  # sender configuration
+  MAIL_SMTP_HOSTNAME: ""
+  MAIL_SMTP_PORT: "25"
+  MAIL_SMTP_HELO_NAME: ""
+  MAIL_SMTP_ENCRYPTION: ""
+  MAIL_SENDMAIL_COMMAND: "/usr/sbin/sendmail -bs"
+  MAIL_BCC: ""
