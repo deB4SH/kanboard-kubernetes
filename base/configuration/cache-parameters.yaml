@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kanboard-cache-parameters
+data:
+  CACHE_DRIVER: "memory"
+  CACHE_DIR: "/tmp/cache"
