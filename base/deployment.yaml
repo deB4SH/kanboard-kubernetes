@@ -11,6 +11,13 @@ spec:
       labels:
         app: kanboard
     spec:
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: kanboard-data
+        - name: plugins
+          persistentVolumeClaim:
+            claimName: kanboard-plugins
       containers:
       - name: kanboard
         image: 	ghcr.io/kanboard/kanboard:v1.2.26 
@@ -59,3 +66,8 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 80
+        volumeMounts:
+          - mountPath: /var/www/app/data
+            name: data
+          - mountPath: /var/www/app/plugins
+            name: plugins
