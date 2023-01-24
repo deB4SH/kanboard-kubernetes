@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kanboard-session
+data:
+  SESSION_DURATION: "0"
+  SESSION_HANDLER: "db"

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kanboard-miscellaneous
+data:
+  MARKDOWN_ESCAPE_HTML: "true"
+  API_AUTHENTICATION_HEADER: ""
+  HIDE_LOGIN_FORM: "false"
+  DISABLE_LOGOUT: "false"
+  API_AUTHENTICATION_TOKEN: "My unique API Token"
+  TOTP_ISSUER: "Kanboard"
+  EXTERNAL_AUTH_EXCLUDE_FIELDS: "username"
