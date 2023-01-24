@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kanboard-database-configuration
+data:
+  DB_RUN_MIGRATIONS: "true"
+  DB_DRIVER: "sqlite"
+  DB_HOSTNAME: "localhost"
+  DB_NAME: "kanboard"
+  DB_PORT: ""
+  DB_SSL_KEY: ""
+  DB_SSL_CERT: ""
+  DB_SSL_CA: ""
