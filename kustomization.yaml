@@ -1,0 +1,29 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  # configuration
+  - base/configuration/bruteforce-protection.yaml
+  - base/configuration/cache-parameters.yaml
+  - base/configuration/database-configuration-secret.yaml
+  - base/configuration/database-configuration.yaml
+  - base/configuration/email-configuration-secret.yaml
+  - base/configuration/email-configuration.yaml
+  - base/configuration/http-client-secret.yaml
+  - base/configuration/http-client.yaml
+  - base/configuration/ldap-configuration-secret.yaml
+  - base/configuration/ldap-configuration.yaml
+  - base/configuration/logging.yaml
+  - base/configuration/miscellaneous.yaml
+  - base/configuration/plugins.yaml
+  - base/configuration/rememberme.yaml
+  - base/configuration/reverse-proxy-configuration.yaml
+  - base/configuration/secure-http-header.yaml
+  - base/configuration/session.yaml
+  - base/configuration/uploaded-files.yaml
+  - base/configuration/url-rewrite.yaml
+  # base
+  - base/deployment.yaml
+  - base/pvc-data.yaml
+  - base/pvc-plugins.yaml
+  - base/service.yaml
