@@ -29,3 +29,4 @@ resources:
   - base/pvc-data.yaml
   - base/pvc-plugins.yaml
   - base/service.yaml
+  - base/namespace.yaml
